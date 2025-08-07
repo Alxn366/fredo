@@ -18,14 +18,19 @@
             <li><a href="#features" data-translate="features">Features</a></li>
             <li><a href="#about" data-translate="about">About</a></li>
             <li><a href="#contact" data-translate="contact">Contact</a></li>
-            <li>
-                <select id="language-selector" class="language-selector">
-                    <option value="en">English</option>
-                    <option value="de">Deutsch</option>
-                    <option value="ar">العربية</option>
-                    <option value="ku">Kurdî</option>
-                </select>
-            </li>
+          <!-- Ersetze den language-selector durch diese Div -->
+<div class="language-switcher">
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="de">DE</button>
+  <button class="lang-btn" data-lang="ar">AR</button>
+  <button class="lang-btn" data-lang="ku">KU</button>
+</div>
+<div class="theme-switcher">
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="bx bx-sun"></i>
+    <i class="bx bx-moon" style="display:none"></i>
+  </button>
+</div>
         </ul>
     </header>
 
@@ -52,35 +57,102 @@
         </div>
     </section>
 
-    <!-- Features -->
-    <section class="features" id="features">
-        <div class="heading">
-            <span data-translate="features_title">Features</span>
-            <h2 data-translate="features_subtitle">What Fredo Can Do</h2>
+<!-- Features Section -->
+<section class="features" id="features">
+    <div class="heading">
+        <span data-translate="features_title">Features</span>
+        <h2 data-translate="features_subtitle">Discover Fredo's Capabilities</h2>
+    </div>
+    <div class="features-container">
+        <!-- Cooking Features -->
+        <div class="feature-box">
+            <i class="bx bx-bowl-hot"></i>
+            <h3 data-translate="feature1">Smart Cooking</h3>
+            <p data-translate="feature1_desc">Prepares thousands of recipes with perfect results every time</p>
         </div>
-        <div class="features-container">
-            <div class="feature-box">
-                <i class="bx bx-bowl-hot"></i>
-                <h3 data-translate="feature1">Cooking</h3>
-                <p data-translate="feature1_desc">Prepares thousands of recipes perfectly every time.</p>
-            </div>
-            <div class="feature-box">
-                <i class="bx bx-dish"></i>
-                <h3 data-translate="feature2">Cleaning</h3>
-                <p data-translate="feature2_desc">Automatically cleans surfaces and dishes.</p>
-            </div>
-            <div class="feature-box">
-                <i class="bx bx-shopping-bag"></i>
-                <h3 data-translate="feature3">Shopping</h3>
-                <p data-translate="feature3_desc">Orders groceries when supplies run low.</p>
-            </div>
-            <div class="feature-box">
-                <i class="bx bx-calendar"></i>
-                <h3 data-translate="feature4">Meal Planning</h3>
-                <p data-translate="feature4_desc">Creates personalized meal plans based on your preferences.</p>
-            </div>
+        <div class="feature-box">
+            <i class="bx bx-cookie"></i>
+            <h3 data-translate="feature2">Precision Baking</h3>
+            <p data-translate="feature2_desc">Specialized baking modes with exact temperature control</p>
         </div>
-    </section>
+        <div class="feature-box">
+            <i class="bx bx-coffee"></i>
+            <h3 data-translate="feature3">Beverage Master</h3>
+            <p data-translate="feature3_desc">Prepares perfect coffee, tea and specialty drinks</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-restaurant"></i>
+            <h3 data-translate="feature4">Multi-Cuisine</h3>
+            <p data-translate="feature4_desc">Expert in international cuisines from 25+ countries</p>
+        </div>
+
+        <!-- Cleaning Features -->
+        <div class="feature-box">
+            <i class="bx bx-dish"></i>
+            <h3 data-translate="feature5">Auto-Cleaning</h3>
+            <p data-translate="feature5_desc">Self-cleaning system with steam sterilization</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-water"></i>
+            <h3 data-translate="feature6">Water Purification</h3>
+            <p data-translate="feature6_desc">Built-in water filtration for healthier cooking</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-recycle"></i>
+            <h3 data-translate="feature7">Waste Management</h3>
+            <p data-translate="feature7_desc">Smart composting and recycling system</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-shield"></i>
+            <h3 data-translate="feature8">Hygiene Control</h3>
+            <p data-translate="feature8_desc">UV sanitation and bacterial monitoring</p>
+        </div>
+
+        <!-- Smart Features -->
+        <div class="feature-box">
+            <i class="bx bx-wifi"></i>
+            <h3 data-translate="feature9">Smart Integration</h3>
+            <p data-translate="feature9_desc">Works with Alexa, Google Home and Apple HomeKit</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-calendar"></i>
+            <h3 data-translate="feature10">Meal Planning</h3>
+            <p data-translate="feature10_desc">Weekly meal plans based on dietary needs</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-health"></i>
+            <h3 data-translate="feature11">Nutrition AI</h3>
+            <p data-translate="feature11_desc">Tracks macros and suggests balanced meals</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-shopping-bag"></i>
+            <h3 data-translate="feature12">Auto-Shopping</h3>
+            <p data-translate="feature12_desc">Orders ingredients directly from local stores</p>
+        </div>
+
+        <!-- Eco Features -->
+        <div class="feature-box">
+            <i class="bx bx-leaf"></i>
+            <h3 data-translate="feature13">Eco Mode</h3>
+            <p data-translate="feature13_desc">Reduces energy consumption by up to 40%</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-battery"></i>
+            <h3 data-translate="feature14">Backup Power</h3>
+            <p data-translate="feature14_desc">48-hour battery backup for power outages</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-cloud"></i>
+            <h3 data-translate="feature15">Cloud Recipes</h3>
+            <p data-translate="feature15_desc">Access to 50,000+ cloud-based recipes</p>
+        </div>
+        <div class="feature-box">
+            <i class="bx bx-up-arrow-alt"></i>
+            <h3 data-translate="feature16">Software Updates</h3>
+            <p data-translate="feature16_desc">Regular feature updates via WiFi</p>
+        </div>
+    </div>
+</section>
 
     <!-- Demo -->
     <section class="fredo-demo">
@@ -97,7 +169,7 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/obot.png" alt="Fredo Kitchen Assistant" />
+            <img src="images/robot.png" alt="Fredo Kitchen Assistant" />
         </div>
         <div class="about-text">
             <span data-translate="about_title">About Fredo</span>
@@ -151,5 +223,4 @@
 
     <script src="main.js"></script>
 </body>
-
 </html>
